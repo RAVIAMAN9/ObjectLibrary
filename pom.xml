@@ -8,9 +8,9 @@
 		<version>3.3.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ObjectLib</groupId>
-	<artifactId>ObjectLibrary</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<groupId>com.objectLib</groupId>
+	<artifactId>objectLibrary</artifactId>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>ObjectLibrary</name>
 	<description>Project for Library having objects</description>
 	<url/>
@@ -29,6 +29,7 @@
 	<properties>
 		<java.version>17</java.version>
 	</properties>
+	<packaging>jar</packaging>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

@@ -1,10 +1,22 @@
-package com.ObjectLib.ObjectLibrary.Dto;
+package Classes.Entity;
 
-public class Train {
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
+@Entity
+@Table(name = "train")
+public class TrainEntity {
+
+    @Id
+    @Column(name = "train_number")
     private Integer trainNumber;
+    @Column(name = "train_name", nullable = false)
     private String trainName;
+    @Column(nullable = false)
     private String source;
+    @Column(nullable = false)
     private String destination;
 
     public Integer getTrainNumber() {
@@ -41,7 +53,7 @@ public class Train {
 
     @Override
     public String toString() {
-        return "Train{" +
+        return "TrainEntity{" +
                 "trainNumber=" + trainNumber +
                 ", trainName='" + trainName + '\'' +
                 ", source='" + source + '\'' +
