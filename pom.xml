@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>rkj.objLib</groupId>
 	<artifactId>objLib</artifactId>
-	<version>1.0.4-SNAPSHOT</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<name>objLib</name>
 	<packaging>jar</packaging>
 	<description>Demo project for Object library</description>
@@ -38,6 +38,13 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/jakarta.validation/jakarta.validation-api -->
+		<dependency>
+			<groupId>jakarta.validation</groupId>
+			<artifactId>jakarta.validation-api</artifactId>
+			<version>3.1.0</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
