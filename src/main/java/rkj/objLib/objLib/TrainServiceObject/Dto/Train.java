@@ -6,6 +6,15 @@ public class Train {
     private String trainName;
     private String source;
     private String destination;
+    private String trainType;
+
+    public String getTrainType() {
+        return trainType;
+    }
+
+    public void setTrainType(String trainType) {
+        this.trainType = trainType;
+    }
 
     public Integer getTrainNumber() {
         return trainNumber;
@@ -46,6 +55,7 @@ public class Train {
                 ", trainName='" + trainName + '\'' +
                 ", source='" + source + '\'' +
                 ", destination='" + destination + '\'' +
+                ", trainType='" + trainType + '\'' +
                 '}';
     }
 }
