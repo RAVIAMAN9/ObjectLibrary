@@ -1,6 +1,6 @@
-package rkj.objLib.objLib.TicketObject;
+package rkj.objLib.objLib.ServiceObjects.TicketObject;
 
-import rkj.objLib.objLib.PassengerObject.Passenger;
+import rkj.objLib.objLib.ServiceObjects.PassengerObject.Passenger;
 
 import java.util.List;
 

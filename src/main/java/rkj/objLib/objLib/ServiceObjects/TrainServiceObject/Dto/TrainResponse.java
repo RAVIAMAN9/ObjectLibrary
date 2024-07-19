@@ -1,6 +1,4 @@
-package rkj.objLib.objLib.TrainServiceObject.Dto;
-
-import jakarta.persistence.Column;
+package rkj.objLib.objLib.ServiceObjects.TrainServiceObject.Dto;
 
 public class TrainResponse extends Train{
 

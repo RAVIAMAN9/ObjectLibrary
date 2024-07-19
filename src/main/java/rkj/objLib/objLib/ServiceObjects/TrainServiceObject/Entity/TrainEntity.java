@@ -1,4 +1,4 @@
-package rkj.objLib.objLib.TrainServiceObject.Entity;
+package rkj.objLib.objLib.ServiceObjects.TrainServiceObject.Entity;
 
 import jakarta.persistence.*;
 import rkj.objLib.objLib.Enums.TrainType;

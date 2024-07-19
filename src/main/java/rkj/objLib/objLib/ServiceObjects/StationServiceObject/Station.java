@@ -1,4 +1,4 @@
-package rkj.objLib.objLib.StationServiceObject;
+package rkj.objLib.objLib.ServiceObjects.StationServiceObject;
 
 public class Station {
 

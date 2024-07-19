@@ -1,4 +1,4 @@
-package rkj.objLib.objLib.StationStoppageObject;
+package rkj.objLib.objLib.ServiceObjects.StationStoppageObject;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;

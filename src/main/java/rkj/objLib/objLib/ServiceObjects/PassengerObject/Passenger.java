@@ -1,4 +1,4 @@
-package rkj.objLib.objLib.PassengerObject;
+package rkj.objLib.objLib.ServiceObjects.PassengerObject;
 
 public class Passenger {
 

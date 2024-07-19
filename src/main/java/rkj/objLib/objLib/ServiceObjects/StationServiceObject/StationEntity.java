@@ -1,4 +1,4 @@
-package rkj.objLib.objLib.StationServiceObject;
+package rkj.objLib.objLib.ServiceObjects.StationServiceObject;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

@@ -1,4 +1,4 @@
-package rkj.objLib.objLib.TicketObject;
+package rkj.objLib.objLib.ServiceObjects.TicketObject;
 
 public class TicketResponse extends Ticket {
     private Integer pnrNumber;

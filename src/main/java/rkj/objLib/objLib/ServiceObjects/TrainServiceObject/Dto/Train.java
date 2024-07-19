@@ -1,4 +1,4 @@
-package rkj.objLib.objLib.TrainServiceObject.Dto;
+package rkj.objLib.objLib.ServiceObjects.TrainServiceObject.Dto;
 
 public class Train {
 
