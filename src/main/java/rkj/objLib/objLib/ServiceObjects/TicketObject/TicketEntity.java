@@ -27,6 +27,10 @@ public class TicketEntity {
     @Lob
     private String passengerList;
 
+    @NotNull
+    @Column(name = "coach_type")
+    private String coachType;
+
     public Integer getPnrNumber() {
         return pnrNumber;
     }
@@ -65,6 +69,14 @@ public class TicketEntity {
 
     public void setPassengerList(@NotNull String passengerList) {
         this.passengerList = passengerList;
+    }
+
+    public String getCoachType() {
+        return coachType;
+    }
+
+    public void setCoachType(String coachType) {
+        this.coachType = coachType;
     }
 
     @Override

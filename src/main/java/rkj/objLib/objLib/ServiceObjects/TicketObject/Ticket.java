@@ -9,6 +9,7 @@ public class Ticket {
     private Integer trainNumber;
     private String boarding;
     private String destination;
+    private String coachType;
     private List<Passenger> passengerList;
 
     public Integer getTrainNumber() {
@@ -41,6 +42,14 @@ public class Ticket {
 
     public void setDestination(String destination) {
         this.destination = destination;
+    }
+
+    public String getCoachType() {
+        return coachType;
+    }
+
+    public void setCoachType(String coachType) {
+        this.coachType = coachType;
     }
 
     @Override
