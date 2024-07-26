@@ -31,6 +31,15 @@ public class TicketEntity {
     @Column(name = "coach_type")
     private String coachType;
 
+    @NotNull
+    @Column(name="ticket_status")
+    private Integer ticketStatus;
+
+    @PrePersist
+    void initializeData(){
+        ticketStatus = 0;
+    }
+
     public Integer getPnrNumber() {
         return pnrNumber;
     }
@@ -79,6 +88,14 @@ public class TicketEntity {
         this.coachType = coachType;
     }
 
+    public Integer getTicketStatus() {
+        return ticketStatus;
+    }
+
+    public void setTicketStatus(Integer ticketStatus) {
+        this.ticketStatus = ticketStatus;
+    }
+
     @Override
     public String toString() {
         return "TicketEntity{" +
@@ -86,7 +103,9 @@ public class TicketEntity {
                 ", trainNumber=" + trainNumber +
                 ", boarding='" + boarding + '\'' +
                 ", destination='" + destination + '\'' +
-                ", passengerList=" + passengerList +
+                ", passengerList='" + passengerList + '\'' +
+                ", coachType='" + coachType + '\'' +
+                ", ticketStatus=" + ticketStatus +
                 '}';
     }
 }
