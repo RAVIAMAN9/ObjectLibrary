@@ -22,6 +22,9 @@ public class StationEntity {
     @NotNull
     private String state;
 
+    @NotNull
+    private String trainNumbers;
+
     public @NotNull String getStationCode() {
         return stationCode;
     }
@@ -46,12 +49,21 @@ public class StationEntity {
         this.state = state;
     }
 
+    public String getTrainNumbers() {
+        return trainNumbers;
+    }
+
+    public void setTrainNumbers(String trainNumbers) {
+        this.trainNumbers = trainNumbers;
+    }
+
     @Override
     public String toString() {
         return "StationEntity{" +
                 "stationCode='" + stationCode + '\'' +
                 ", stationName='" + stationName + '\'' +
                 ", state='" + state + '\'' +
+                ", trainNumbers='" + trainNumbers + '\'' +
                 '}';
     }
 }

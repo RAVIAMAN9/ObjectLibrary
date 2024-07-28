@@ -1,10 +1,13 @@
 package rkj.objLib.objLib.ServiceObjects.StationServiceObject;
 
+import java.util.List;
+
 public class Station {
 
     private String stationCode;
     private String stationName;
     private String state;
+    private List<Integer> trainList;
 
     public String getStationCode() {
         return stationCode;
@@ -30,12 +33,21 @@ public class Station {
         this.state = state;
     }
 
+    public List<Integer> getTrainList() {
+        return trainList;
+    }
+
+    public void setTrainList(List<Integer> trainList) {
+        this.trainList = trainList;
+    }
+
     @Override
     public String toString() {
         return "Station{" +
                 "stationCode='" + stationCode + '\'' +
                 ", stationName='" + stationName + '\'' +
                 ", state='" + state + '\'' +
+                ", trainList='" + trainList + '\'' +
                 '}';
     }
 }
