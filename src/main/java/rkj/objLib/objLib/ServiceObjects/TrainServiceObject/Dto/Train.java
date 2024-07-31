@@ -1,5 +1,7 @@
 package rkj.objLib.objLib.ServiceObjects.TrainServiceObject.Dto;
 
+import java.util.List;
+
 public class Train {
 
     private Integer trainNumber;
@@ -7,6 +9,7 @@ public class Train {
     private String source;
     private String destination;
     private String trainType;
+    private List<String> stoppages;
 
     public String getTrainType() {
         return trainType;
@@ -48,6 +51,14 @@ public class Train {
         this.destination = destination;
     }
 
+    public List<String> getStoppages() {
+        return stoppages;
+    }
+
+    public void setStoppages(List<String> stoppages) {
+        this.stoppages = stoppages;
+    }
+
     @Override
     public String toString() {
         return "Train{" +
@@ -56,6 +67,7 @@ public class Train {
                 ", source='" + source + '\'' +
                 ", destination='" + destination + '\'' +
                 ", trainType='" + trainType + '\'' +
+                ", stoppages=" + stoppages +
                 '}';
     }
 }

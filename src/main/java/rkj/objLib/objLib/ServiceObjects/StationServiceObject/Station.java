@@ -7,7 +7,7 @@ public class Station {
     private String stationCode;
     private String stationName;
     private String state;
-    private List<Integer> trainList;
+    private List<Integer> trainNumbers;
 
     public String getStationCode() {
         return stationCode;
@@ -33,12 +33,12 @@ public class Station {
         this.state = state;
     }
 
-    public List<Integer> getTrainList() {
-        return trainList;
+    public List<Integer> getTrainNumbers() {
+        return trainNumbers;
     }
 
-    public void setTrainList(List<Integer> trainList) {
-        this.trainList = trainList;
+    public void setTrainNumbers(List<Integer> trainNumbers) {
+        this.trainNumbers = trainNumbers;
     }
 
     @Override
@@ -47,7 +47,7 @@ public class Station {
                 "stationCode='" + stationCode + '\'' +
                 ", stationName='" + stationName + '\'' +
                 ", state='" + state + '\'' +
-                ", trainList='" + trainList + '\'' +
+                ", trainNumbers=" + trainNumbers +
                 '}';
     }
 }

@@ -5,6 +5,14 @@ public class TrainStoppage {
     private Integer trainNumber;
     private String stoppageCode;
 
+    public TrainStoppage() {
+    }
+
+    public TrainStoppage(Integer trainNumber, String stoppageCode) {
+        this.trainNumber = trainNumber;
+        this.stoppageCode = stoppageCode;
+    }
+
     public Integer getTrainNumber() {
         return trainNumber;
     }

@@ -1,7 +1,13 @@
 package rkj.objLib.objLib.ServiceObjects.TrainServiceObject.Entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotNull;
 import rkj.objLib.objLib.Enums.TrainType;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
 
 @Entity
 @Table(name = "train")
@@ -27,7 +33,10 @@ public class TrainEntity {
     private Integer sleeper;
     @Column(name="chair_car")
     private Integer chairCar;
-
+    @Lob
+    @NotNull
+    @Convert(converter = ConvertStringList.class)
+    private List<String> stoppages;
     @PrePersist
     public void prePersist(){
         if(this.trainType.toUpperCase().equals(TrainType.EXPRESS.getValue())){
@@ -137,6 +146,14 @@ public class TrainEntity {
         this.chairCar = chairCar;
     }
 
+    public List<String> getStoppages() {
+        return stoppages;
+    }
+
+    public void setStoppages(List<String> stoppages) {
+        this.stoppages = stoppages;
+    }
+
     @Override
     public String toString() {
         return "TrainEntity{" +
@@ -150,6 +167,29 @@ public class TrainEntity {
                 ", Ac1Tier=" + Ac1Tier +
                 ", sleeper=" + sleeper +
                 ", chairCar=" + chairCar +
+                ", stoppages=" + stoppages +
                 '}';
+    }
+
+    @Converter
+    public static class ConvertStringList implements AttributeConverter<List<String>,String>{
+
+        @Override
+        public String convertToDatabaseColumn(List<String> attributes) {
+            if(attributes==null || attributes.isEmpty()){
+                return "";
+            }
+            return attributes.stream()
+                    .collect(Collectors.joining(","));
+        }
+
+        @Override
+        public List<String> convertToEntityAttribute(String s) {
+            if(s == null || s.isEmpty()){
+                return new ArrayList<>();
+            }
+            return Arrays.stream(s.split(","))
+                    .collect(Collectors.toList());
+        }
     }
 }
