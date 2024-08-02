@@ -5,7 +5,7 @@ public enum TrainType {
     EXPRESS("EXPRESS"),
     SHATABDI_EXPRESS("SHATABDI_EXPRESS"),
     VANDE_BHARAT_EXPRESS("VANDE_BHARAT_EXPRESS"),
-    RAJDHANI_EXPRESS("RAJDHANI EXPRESS");
+    RAJDHANI_EXPRESS("RAJDHANI_EXPRESS");
 
     private final String value;
     TrainType(String value) {
